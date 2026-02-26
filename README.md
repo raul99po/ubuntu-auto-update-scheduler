@@ -23,19 +23,26 @@
 1. Clona este repositorio o transfiere los archivos al servidor:
 
 ```bash
-git clone https://github.com/tu_usuario/update_and_upgrade_ubuntu.git
+git clone https://github.com/raul99po/ubuntu-auto-update-scheduler.git
+cd ubuntu-auto-update-scheduler/
 ```
 
 2. Da permisos de ejecución:
 
 ```bash
-chmod +x update_and_upgrade_ubuntu/*.sh
+chmod +x *.sh
 ```
 
-3. Ejecuta el script de configuración:
+3. Edita el script con tu BOT_TOKEN y CHAT_ID:
 
 ```bash
-./update_and_upgrade_ubuntu/scheduled_update.sh
+nano update_and_upgrade_ubuntu.sh
+```
+   
+4. Ejecuta el script de configuración:
+
+```bash
+sudo ./scheduled_update.sh
 ```
 
 ## 📡 Notificación por Telegram
